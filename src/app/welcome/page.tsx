@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 import {NavBar} from "@/app/welcome/NavBar";
 import Image from "next/image";
 import {TypewriterEffectSmooth} from "@/components/ui/typewriter-effect";
-import {mainText} from "@/lib/constance/norway"
+import {mainText, slideData} from "@/lib/constance/norway"
 import {CardBody, CardContainer, CardItem} from "@/components/ui/3d-card";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import {
@@ -15,11 +15,12 @@ import {
     IconSignature,
     IconTableColumn,
 } from "@tabler/icons-react";
-
+import Carousel from "@/components/ui/carousel"
 function Page() {
 
     useEffect(() => {
-        getNorwayMainText()
+        getNorwayMainText();
+        getSlideData();
     }, [])
 
 
@@ -31,6 +32,16 @@ function Page() {
     }
 
 
+    function getSlideData():any{
+        return slideData.map(oneSlide=>({
+            title: oneSlide.title,
+            button: oneSlide.button,
+            src: oneSlide.src,
+        }))
+    }
+
+
+    // @ts-ignore
     return (
         <div>
 
@@ -366,6 +377,17 @@ function Page() {
 
 
             </div>
+
+
+
+
+            <div>
+                <Carousel slides={slideData} />
+            </div>
+
+
+
+
 
 
         </div>
