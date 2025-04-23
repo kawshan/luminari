@@ -38,6 +38,7 @@ function Page() {
 
 
     const travelDesignerNotes: string = `TRAVEL DESIGNER'S NOTES`;
+    const theStays: string = `The Stays`;
 
 
     // @ts-ignore
@@ -394,9 +395,17 @@ function Page() {
 
             </div>
 
+            <div className="text-center">
+                <TextGenerateEffect className="inline-block rounded-2xl p-4  bg-black mb-20" words={theStays}/>
+            </div>
 
-            <div>
-                <Carousel slides={slideData}/>
+            <div className="grid grid-cols-4 gap-4">
+                <div></div>
+                <div>
+                    <Carousel slides={slideData}/>
+                </div>
+                <div></div>
+                <div></div>
             </div>
 
 
@@ -430,12 +439,12 @@ function Page() {
                 <div>
                     <CardSpotlight className="h-full w-full rounded-2xl">
                         <TextGenerateEffect className="ms-10" words={travelDesignerNotes}/>
-                        <p className="mt-5">Our travel designers have
+                        <p className="mt-5 dark:text-white text-white">Our travel designers have
                             selected Norwegian experts from two remote islands in the Steigen archipelago and curated a
                             rare and authentic exploration of ritualistic survival through stories. Where brave
                             lighthouse keepers kept boats safe and sauna rituals kept islander's minds and bodies well –
                             step into a world where the sun rarely sets.</p>
-                        <p className="mt-5">Walk hidden trails and learn
+                        <p className="mt-5 dark:text-white text-white">Walk hidden trails and learn
                             how extraordinary flora and fauna have flourished here despite the harsh conditions. Stay
                             overnight in island monuments with rich histories, including a lighthouse on a private
                             island and a renovated solar tank.</p>
