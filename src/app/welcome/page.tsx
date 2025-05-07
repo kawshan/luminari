@@ -10,6 +10,9 @@ import {BackgroundGradient} from "@/components/ui/background-gradient";
 import {TextGenerateEffect} from "@/components/ui/text-generate-effect";
 import {CardSpotlight} from "@/components/ui/card-spotlight";
 import ColourfulText from "@/components/ui/colourful-text";
+import { Boxes } from "@/components/ui/background-boxes";
+import { cn } from "@/lib/utils";
+import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 
 
 function Page() {
@@ -54,10 +57,12 @@ function Page() {
                     <TypewriterEffectSmooth className="text-white" words={getNorwayMainText()}/>
                 </div>
 
-                <div className="absolute top-6/10 left-4/10 text-center text-xl text-white">
-                    <p className="text-white">
+                <div className="absolute top-6/10 left-4/10 text-center text-2xl text-white">
+                    <Highlight className="text-black dark:text-white">
                         Norway: Pushing the boundaries for foodie adventurers
-                    </p>
+                    </Highlight>
+
+
                 </div>
 
 
@@ -456,7 +461,10 @@ function Page() {
 
 
 
-            <div className="mt-20 h-[500px] w-screen">
+            <div className="h-205 relative mt-10 overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
+                <div className="absolute inset-0 bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+
+                <Boxes />
 
             </div>
 
