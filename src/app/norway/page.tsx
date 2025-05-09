@@ -1,6 +1,6 @@
 "use client"
 import React, {useEffect} from 'react';
-import {NavBar} from "@/app/welcome/NavBar";
+import {NavBar} from "@/app/norway/NavBar";
 import Image from "next/image";
 import {TypewriterEffectSmooth} from "@/components/ui/typewriter-effect";
 import {mainText, slideData} from "@/lib/constance/norway"
@@ -461,11 +461,81 @@ function Page() {
 
 
 
-            <div className="h-205 relative mt-10 overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
-                <div className="absolute inset-0 bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+            <div className="h-220 relative mt-10 overflow-hidden bg-slate-900  rounded-lg">
+                <div className="absolute bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+
+                <div className="grid grid-cols-6 gap-4 mt-20">
+                    <div></div>
+                    <div className="text-white text-start">
+                        <p className="text-4xl font-extrabold">Connect With Luminari</p>
+                        <p className="text-2xl mt-2">About Luminari</p>
+                        <p className="text-2xl mt-2">Contact The Editors</p>
+                        <p className="text-2xl mt-2">Newsletter Sign Up</p>
+                        <p className="text-2xl mt-2">Accessibility Help</p>
+                        <p className="text-2xl mt-2">Luminari Worldwide❤</p>
+
+                    </div>
+
+
+
+                    <div className="text-white text-start">
+                        <p className="text-4xl font-extrabold">Subscriptions</p>
+                        <p className="text-2xl mt-2">Subscribe</p>
+                        <p className="text-2xl mt-2">Customer Service</p>
+                        <p className="text-2xl mt-2">Renew Subscription</p>
+                        <p className="text-2xl mt-2">Gift a Gift</p>
+                        <p className="text-2xl mt-2">Change Address</p>
+                        <p className="text-2xl mt-2">International Subscription</p>
+
+                    </div>
+
+
+
+
+                    <div className="text-white text-start">
+                        <p className="text-4xl font-extrabold">Press Center</p>
+                        <p className="text-2xl mt-2">Contact Advertising</p>
+                        <p className="text-2xl mt-2">Press Center</p>
+
+                    </div>
+
+
+                    <div className="text-white text-start">
+                        <p className="text-4xl font-extrabold">Conde Nast</p>
+                        <p className="text-2xl mt-2">Our Magazine Site❤</p>
+                        <p className="text-2xl mt-2">Conde Nast Store</p>
+                        <p className="text-2xl mt-2">Conde Nast Web</p>
+                        <p className="text-2xl mt-2">Conde Nast Careers</p>
+                        <p className="text-2xl mt-2">Site Map</p>
+                        <p className="text-2xl mt-2">Reprints</p>
+
+                    </div>
+
+
+
+                    <div></div>
+                </div>
+
+                    <hr className="mt-10"/>
+                    <hr className="mt-20"/>
+
+
+                <p className="text-7xl text-white text-center mt-5 font-extrabold">Luminari</p>
+
+
+                <p className="text-2xl text-white text-center mt-5 font-semibold">© 2018 Condé Nast. All rights reserved.</p>
+
+
+
+                    <p className="text-2xl text-white text-center mt-5 font-semibold">Use of this site constitutes acceptance of our User Agreement (effective 1/2/2014) and Privacy Policy (effective 1/2/2014). Architectural Digest may earn a portion</p>
+                    <p className="text-2xl text-white text-center mt-5 font-semibold"> of sales from products that are purchased through our site as part of our Affiliate Partnerships with retailers. Your California Privacy Rights (effective 1/2/2014).</p>
+                    <p className="text-2xl text-white text-center mt-5 font-semibold">The material on this site may not be reproduced, distributed, transmitted, cached, or otherwise used, except with prior written permission of Condé Nast.</p>
+
+
+
+
 
                 <Boxes />
-
             </div>
 
 
